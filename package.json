@@ -1,0 +1,27 @@
+{
+  "name": "mongodb-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest --detectOpenHandles --runInBand --verbose  --forceExit --coverage --watchAll",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build",
+    "dev": "nodemon --exec ts-node sandbox.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.2",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2"
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "name": "mongodb-orm",
-  "version": "1.0.0",
+  "name": "mongodbnn-orm",
+  "version": "1.0.1",
   "description": "",
   "main": "index.ts",
   "scripts": {

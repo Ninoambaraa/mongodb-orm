@@ -1,15 +1,17 @@
 {
   "name": "mongodbnn-orm",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
-  "main": "index.ts",
-  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --detectOpenHandles --runInBand --verbose  --forceExit --coverage --watchAll",
     "build": "tsc",
     "start": "ts-node src/index.ts",
     "prepublishOnly": "npm run build",
-    "dev": "nodemon --exec ts-node sandbox.ts"
+    "dev": "nodemon --exec ts-node sandbox.ts",
+    "lint": "tsc"
   },
   "author": "",
   "license": "ISC",
